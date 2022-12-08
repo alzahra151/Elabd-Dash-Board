@@ -1,0 +1,73 @@
+<div class="container-fluid m-0 p-0  ">
+    <div class="row flex-nowrap p-sm-0">
+        <div class="col-auto col-lg-3 col-xl-2  px-lg-3 py-lg-0 px-sm-0 ">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <img src="https://elabdfoods.com/Content/images/Upload.png" class=" m-2"
+                        style="width: 50px;height:50px" />
+                    <span class="fs-5 d-none d-sm-inline text-dark">Elabd</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a routerLink="/home" class="nav-link  align-middle px-0 " [routerLinkActive]="['active']">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/" data-bs-toggle="collapse" class="nav-link px-0 align-middle"
+                            [routerLinkActive]="['active']">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a routerLink="/Orders" class="nav-link px-0 align-middle " [routerLinkActive]="['active']">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline ">Orders</span></a>
+                    </li>
+
+                    <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle"
+                            [routerLinkActive]="['active']">
+                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                        <ul class="collapse nav flex-column ms-2" id="submenu3" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a routerLink="/products" class="nav-link px-0" [routerLinkActive]="['active']"> <span
+                                        class="d-none d-sm-inline">Add Products</span></a>
+                            </li>
+                            <li>
+                                <a routerLink="/settingProduct" [routerLinkActive]="['active']" class="nav-link px-0">
+                                    <span class="d-none d-sm-inline">Products settings</span></a>
+                            </li>
+                            <li>
+                                <a routerLink="/products Info" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Product Information</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#users" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-color"
+                            [routerLinkActive]="['active']">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Users</span> </a>
+                        <ul class="collapse nav flex-column ms-1" id="users" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a routerLink="/users" class="nav-link px-0" [routerLinkActive]="['active']"> <span
+                                        class="d-none d-sm-inline">users</span></a>
+                            </li>
+                            <li>
+                                <a routerLink="/AddUser" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Product</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+</div>
